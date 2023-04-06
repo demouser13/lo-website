@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="refresh" content="30"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	 <style>body {background-color: coral; font-size: 150%;   color: white}
+	 </style>
+	 
+
+
+</head>
+<body>
+      
+      <script type="text/javascript">
+      const queryString = window.location.search;
+      alert(queryString);
+      const urlParams = new URLSearchParams(queryString);
+      var  name = urlParams.get('name')
+      alert(name);
+       //document.write('<h3 style="text-align: center;">test</h3>');
+                   
+       document.write('<marquee>');
+      document.write('<h3 style="text-align: center;">');
+      document.write(" " + name + ", Welcome to LMS !!! ");
+      document.write('</h3>');
+      document.write('</marquee');
+      </script>
+</body>
